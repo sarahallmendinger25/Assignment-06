@@ -1,0 +1,38 @@
+    .cat{grid-area: cat;}
+    .joy{grid-area: joy;}
+    .wobu{grid-area: wobu;}
+
+    .containers{
+        display:grid;
+        grid-template-areas: 
+        'cat cat wobu'
+        'joy joy wobu ';
+    }
+    .containers img{
+        max-width: 200px;
+        display: flex;
+        float: right;
+
+    }
+
+
+@media(min-width: 600px) and (max-width: 1024px){
+    .containers img{
+        max-width: 200px;
+        display: flex;
+        float: right;
+
+    }
+  
+    .cat{grid-area: cat;}
+    .joy{grid-area: joy;}
+    .wobu{grid-area: wobu;}
+
+    .containers{
+        display:grid;
+        grid-template-areas: 
+        'cat cat'
+        'joy joy'
+        'wobu wobu';
+}
+}
